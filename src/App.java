@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class App {
     public static void main(String[] args) throws Exception {
         
@@ -24,10 +27,39 @@ public class App {
 
         // for (reset counter; condition; increment)
 
-        for (int counter = 0 ; counter < 5; counter++)
-        {
-            System.out.println(counter + 1);
-        }
+        // for (int counter = 0 ; counter < 5; counter++)
+        // {
+        //     System.out.println(counter + 1);
+        // }
 
+        // WHILE
+        // int counter = 0;
+        // while (counter < 5) {
+        //     System.out.println(counter + 1);
+        //     counter++;
+        // }
+
+        // DO WHILE
+        
+        // Random r = new Random();
+        // Scanner in = new Scanner(System.in);
+        // String playAgain;
+
+        // do {
+        //     System.out.println("Trowing a dice");
+        //     System.out.println(r.nextInt(6)+1);
+        //     System.out.println("Again (Y/N)?");
+        //     playAgain = in.nextLine();
+        // } while (playAgain.equalsIgnoreCase("Y"));
+
+        // System.out.println("Thanks for playing!");
+
+        for (int i = 0; i < 100 ; i++)
+        {
+            if (i == 50) {
+                break;
+            }
+            System.out.println(i + 1);
+        }
     }
 }
